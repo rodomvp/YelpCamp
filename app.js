@@ -23,8 +23,8 @@ var commentRoutes    = require("./routes/comments"),
 //================================================//
 
 
-// mongoose.connect("mongodb://localhost/yelp_camp_v6")
-mongoose.connect("mongodb://vincent:cajun13@ds023465.mlab.com:23465/yelpcamp")
+mongoose.connect(process.env.DATABASEURL)
+
 app.set("view engine", "ejs")
 
 // seedDB();  //Seed the Database
@@ -75,6 +75,6 @@ app.get('*', function(req, res) {
   res.status(404).send('Error 404: Page not found');
 });
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT, function() {
     console.log("Yelp Camp Server has Started!");
 })
