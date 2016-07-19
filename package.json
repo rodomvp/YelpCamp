@@ -1,10 +1,11 @@
 {
   "name": "yelpcamp",
   "version": "1.0.0",
-  "description": "",
+  "description": "An express web app for browsing and reviewing campgrounds",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,14 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodomvp/YelpCamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rodomvp/YelpCamp/issues"
+  },
+  "homepage": "https://github.com/rodomvp/YelpCamp#readme"
 }
