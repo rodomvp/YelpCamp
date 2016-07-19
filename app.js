@@ -22,8 +22,8 @@ var commentRoutes    = require("./routes/comments"),
 //              MONGOOSE CONFIG                   //
 //================================================//
 
-
-mongoose.connect(process.env.DATABASEURL)
+var url = process.env.DATABASEURL
+mongoose.connect(url)
 
 app.set("view engine", "ejs")
 
