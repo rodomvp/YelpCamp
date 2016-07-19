@@ -1,0 +1,21 @@
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail {
+	padding: 0;
+}
+
+.thumbnail .caption-full{
+	padding: 9px;
+}
+
+.new-comment-container{
+	display: inline-block;
+	text-align: center;
+	height: 200%;
+}
+
+#delete-form {
+	display: inline-block;
+}
