@@ -75,6 +75,6 @@ app.get('*', function(req, res) {
   res.status(404).send('Error 404: Page not found');
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Yelp Camp Server has Started!");
 })
